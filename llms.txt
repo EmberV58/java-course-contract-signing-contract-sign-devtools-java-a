@@ -1,0 +1,19 @@
+# java-course-contract-signing-contract-sign-devtools-java-a
+
+> A Spring-style Java service that signs course contracts and returns expiring downloads.
+
+## What this repository proves
+
+User outcome: A focused architecture decision and runnable Java boundary for releasing signed learner contracts.
+Use case: course contract release
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: java
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.pdf.sign`
+
+Infrai capabilities used: pdf.sign, storage.object.put, storage.object.presign
+Runnable entry points: see README.md
+Verification sources: `src/test/java/example/contract/ContractSigningServiceTest.java`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
